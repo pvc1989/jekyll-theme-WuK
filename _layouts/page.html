@@ -8,6 +8,9 @@ layout: default
 <div class="masthead">
   <div class="container">
     <h3 class="masthead-title">
+      {% if page.title and page.title != "Home" %}
+        {{ page.title }}
+      {% endif %}
       <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
       <small>{{ site.tagline }}</small>
     </h3>
